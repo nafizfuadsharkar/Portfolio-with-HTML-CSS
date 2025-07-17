@@ -182,11 +182,31 @@ footer textarea {
   .skills-container,
   .resume-container,
   footer,
-  .about-items {
+  .about-items,
+  .banner,
+  nav,
+  nav > ul {
     flex-direction: column;
   }
-  footer , .about{
+
+  nav > ul {
+    gap: 20px;
+  }
+  footer,
+  .about {
     padding: 20px;
+  }
+  .btn-primary{
+    margin-bottom: 20px;
+  }
+  .banner {
+    margin: 20px;
+  }
+  .banner-profile-pic {
+    width: 100%;
+  }
+  .header {
+    background-image: none;
   }
   .footer-column {
     width: 100%;
@@ -196,8 +216,15 @@ footer textarea {
   footer textarea {
     width: calc(100%-40px);
   }
-  .about{
-    padding: 20px;
-  }
-
 }
+
+/* tablet specific media query  */
+@media screen and (min-width: 576px) and (max-width: 990px) {
+  .banner{
+    flex-direction: column;
+  }
+}
+
+
+
+
